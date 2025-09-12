@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="../assets/RevoU_logo.png" alt="RevoU Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#portfolio">Program</a></li>
+        <li><a href="#message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+ <section id="home" class="home">
+  <h1 id="welcome-text">Hi Dan, Welcome To RevoU Website</h1>
+  <p>Ini adalah website RevoU</p>
+  <div class="banner">
+    <img src="../assets/banner.jpeg" alt="Website Banner">
+  </div>
+</section>
+
+<!-- Add this section before Our Headquarters section -->
+<section id="profile" class="profile">
+  <h2>Our Profile</h2>
+  <div class="profile-content">
+    <div class="profile-text">
+      <p>RevoU adalah platform pendidikan teknologi yang bertujuan untuk membantu orang-orang mengembangkan karir mereka di bidang digital. Kami menyediakan program pembelajaran yang komprehensif dan praktis untuk mempersiapkan talenta digital berkualitas.</p>
+      <p>Visi kami adalah menjadi platform pendidikan teknologi terkemuka di Asia Tenggara yang memberdayakan individu untuk mencapai potensi terbaik mereka dalam industri digital.</p>
+    </div>
+    <div class="profile-stats">
+      <div class="stat-item">
+        <h3>12500+</h3>
+        <p>Students</p>
+      </div>
+      <div class="stat-item">
+        <h3>100+</h3>
+        <p>Mentors</p>
+      </div>
+      <div class="stat-item">
+        <h3>50+</h3>
+        <p>Partners</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Our Headquarters -->
+  <section class="headquarter">
+    <h2>Our Headquarter</h2>
+    <div class="locations">
+      <div class="location-item">
+        <div class="circle"></div>
+        <p>Jakarta</p>
+      </div>
+      <div class="location-item">
+        <div class="circle"></div>
+        <p>Bandung</p>
+      </div>
+      <div class="location-item">
+        <div class="circle"></div>
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+  <h2>Our Program</h2>
+  <div class="portfolio-container">
+    <div class="portfolio-item">
+      <img src="../assets/portofolio1.jpg" alt="Software Engineering Program">
+      <div class="portfolio-info">
+        <h3>Full Stack Software Engineering</h3>
+        <p>Learn from Experienced Software Engineering Experts in SEA and accelerate your career as a Software Engineer. </p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+     <img src="../assets/portofolio2.jpg" alt="Digital Marketing Program">
+      <div class="portfolio-info">
+        <h3>Full Stack Digital Marketing</h3>
+        <p>Become an AI-skilled Digital Marketer in 2025! Future-proof your career with AI skills and learn from SEA’s top experts to accelerate your career path. </p>
+      </div>
+    </div>
+    <div class="portfolio-item">
+      <img src="../assets/portofolio3.jpg" alt="Data Analytics Program">
+      <div class="portfolio-info">
+        <h3>Full Stack Data Analytics</h3>
+        <p>Become an AI-skilled Data Analyst in 2025! Future-proof your career with AI skills and learn from SEA’s top experts to accelerate your career path. </p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <section id="message" class="message">
+  <h2>Message Us</h2>
+  <div class="message-container">
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <span class="colon">:</span>
+        <div class="input-wrapper">
+          <input type="text" id="name" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="date">Tanggal Lahir</label>
+        <span class="colon">:</span>
+        <div class="input-wrapper">
+          <input type="date" id="date" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis Kelamin</label>
+        <span class="colon">:</span>
+        <div class="input-wrapper">
+          <div class="radio-group">
+            <input type="radio" id="laki" name="gender" value="laki" required>
+            <label for="laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message-text">Pesan</label>
+        <span class="colon">:</span>
+        <div class="input-wrapper">
+          <textarea id="message-text" required></textarea>
+        </div>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="output" id="output"></div>
+  </div>
+</section>
+
+  <footer>
+    <p class="copyright">Created by dan</p>
+</footer>
+</body>
+</html>

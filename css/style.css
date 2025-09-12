@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.home {
+  text-align: left;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.home p {
+  text-align: left;
+}
+
+.banner {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  height: 400px; /* Default height for desktop */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Add these styles before the headquarter section styles */
+.profile {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile-text {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.profile-text p {
+  margin-bottom: 1rem;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item {
+  flex: 1;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+/* Add these to your existing media queries */
+@media screen and (max-width: 768px) {
+  .profile {
+    padding: 2rem 1rem;
+  }
+
+  .profile-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .profile-text {
+    font-size: 14px;
+  }
+
+  .stat-item h3 {
+    font-size: 1.75rem;
+  }
+}
+
+.headquarter {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.headquarter h2 {
+  margin-bottom: 2rem;
+}
+
+.locations {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.location-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.portfolio {
+  padding: 4rem 1rem;
+  background: #f8f9fa;
+}
+
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.portfolio-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portfolio-info {
+  padding: 1.5rem;
+}
+
+.portfolio-info h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.portfolio-info p {
+  color: #666;
+}
+
+/* Add to your existing media queries */
+@media screen and (max-width: 1024px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    padding: 2rem 1rem;
+  }
+  
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.message {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.message h2 {
+  margin-bottom: 2rem;
+}
+
+.message-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 2rem;  /* Add spacing below Message Us title */
+}
+
+.output {
+  flex: 0 0 45%;
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+form {
+  flex: 0 0 50%;
+}
+
+/* Remove duplicate .output styles */
+/* Delete or comment out the second .output {...} block at the bottom of your CSS */
+
+.form-group {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  min-width: 100px;
+  text-align: left;
+}
+
+.colon {
+  padding: 0 8px;
+}
+
+.input-wrapper {
+  flex: 1;
+}
+
+.input-wrapper input,
+.input-wrapper select,
+.input-wrapper textarea {
+  width: 100%;
+  padding: 4px 8px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  padding: 4px 0;
+}
+
+.radio-group label {
+  min-width: auto;
+  margin-right: 16px;
+}
+
+button {
+  margin-left: calc(100px + 16px + 8px); /* label width + colon width + padding */
+  padding: 8px 24px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Rest of your existing CSS stays the same */
+.radio-group input[type="radio"] {
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.radio-group label {
+    font-size: 14px;
+    vertical-align: middle;
+}
+form {
+  flex: 1;
+}
+
+.output {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+button {
+  width: auto;
+  padding: 0.5rem 2rem;
+  margin-left: 108px;
+}
+button:hover {
+  background: #333;
+}
+
+.output {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: right;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-top: 1px solid #ddd;
+}
+
+/* Add these media queries at the end of your CSS file */
+
+/* Tablet and smaller desktop */
+@media screen and (max-width: 1024px) {
+  .home, .message {
+    padding: 2rem;
+  }
+
+  .locations {
+    gap: 2rem;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  header {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .logo img {
+    height: 32px;
+  }
+
+  /* Home section */
+  .home {
+    padding: 1.5rem;
+  }
+
+  .home h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Headquarters section */
+  .locations {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Message section */
+  .message-container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  form, .output {
+    flex: 0 0 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .form-group label {
+    min-width: unset;
+  }
+
+  .colon {
+    display: none;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+
+  button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* Output styling for mobile */
+  .output {
+    margin-top: 1rem;
+  }
+
+  .output div {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .output span[style*="width: 100px"] {
+    width: auto !important;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .nav-links {
+    font-size: 14px;
+    gap: 0.5rem;
+  }
+
+  .home h1 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    height: 150px;
+    margin-bottom: 1.5rem;
+  }
+}
